@@ -136,14 +136,13 @@ line-height: 21.17px;
   
   /* attributes for mobile design*/
 
-  @media only screen and (max-width: 425px){
+  @media only screen and (max-width: 390px){
   body{
   background-image: url(mobile-design.jpg);
   
   }
 
   .container{
-    margin:71px 24px;
     max-width: 87%;
   }
 
