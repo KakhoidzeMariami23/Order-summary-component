@@ -1,1 +1,1 @@
-# Order-summery-component
+# Order-summary-component
