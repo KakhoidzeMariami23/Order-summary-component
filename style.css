@@ -1,0 +1,169 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+--paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+--verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
+  background-image: url(pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--paleblue);
+  position: relative;
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.content{
+padding: 0px 48px 48px 48px;
+text-align: center;
+}
+
+.title{
+  color: var(--Darkblue);
+  font-size: 900;
+  font-size: 28px;
+  line-height: 37.4px;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 17px;
+}
+
+.content p.subtitle {
+  color: var(--Desaturatedblue);
+  margin-bottom: 20px;
+}
+
+
+.plan{
+  background-color: var(--verypaleblue);
+  border-radius: 11px;
+  display: flex;
+  padding: 25px 24px;
+  justify-content: space-between;
+}
+
+.plan-left{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.plan-left div{
+  margin-left: 20px;
+}
+
+.plan-left div h5{
+font-weight: 900;
+color: var(--Darkblue);
+font-size: 16px;
+line-height: 21.17px;
+}
+
+.plan-left div p{
+  color: var(--Desaturatedblue);
+  font-size: 16px;
+  line-height: 21px;
+  }
+
+  .change{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18.52px;
+  color: var(--Brightblue);
+  margin:40px 0px 39px 94px;
+  transition: 1s;
+  }
+
+  .change:hover{
+    color: #766CF1
+  }
+
+  .button{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--Brightblue);
+    padding: 15px 102px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 20px;
+    box-shadow: 0, 20px;
+    margin:32px 0 ;
+    transition: 1s;
+  }
+
+  .button:hover{
+   background-color: #766CF1;
+  }
+
+
+  .cancel{
+    font-size: 15px;
+    font-weight: 900px;
+    text-decoration: none;
+    line-height: 19.89px;
+    color: var(--Desaturatedblue);
+    transition: 1s;
+  }
+
+  .cancel:hover{
+   color: #1F2E55;
+  }
+ 
+  
+  /* attributes for mobile design*/
+
+  @media only screen and (max-width: 425px){
+  body{
+  background-image: url(mobile-design.jpg);
+  
+  }
+
+  .container{
+    max-width: 87%;
+  }
+
+  .title{
+  font-size: 22px;
+  }
+ 
+  div.plan{
+    padding: 12px;
+  }
+
+  .plan-left div {
+    margin-left: 10px;
+  }
+
+  .button, .cancel
+  {
+   font-size: 15px;
+  }
+
+  .content{
+   padding: 9% 7%;
+  }
+  }
