@@ -112,6 +112,7 @@ line-height: 21.17px;
     border-radius: 20px;
     box-shadow: 0, 20px;
     margin:32px 0 ;
+    box-shadow: 0px 20px 15px rgba(56, 42, 225, 0.1903);
     transition: 1s;
   }
 
